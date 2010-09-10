@@ -9,6 +9,8 @@ Author URI:  http://toscho.de
 Created:     14.06.2010
 
 Changelog
+v0.4 (10.09.2010)
+	- added 'pending' post status symbol
 
 v0.3 (08.09.2010)
 	* Fixed unknown authors
@@ -128,6 +130,7 @@ class Last_Edited extends Toscho_Dashboard_Widget
 		if ( 'publish' == $status ) return '<span title="Publiziert">✔</span>';
 		if ( 'draft' == $status ) return '<span title="Entwurf">✄</span>';
 		if ( 'trash' == $status ) return '<span title="Mülleimer">✕</span>';
+		if ( 'pending' == $status ) return '<span title="Wartet auf Genehmigung">❣</span>';
 
 		return $status;
 	}
